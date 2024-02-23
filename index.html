@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Escalação de Times</title>
+  </head>
+  <body>
+    <div id="all">
+      <div id="title">
+        <h1>Escalação de Times</h1>
+      </div>
+      <hr />
+      <div id="cards">
+        <div id="escalar">
+          <h2>Escalar jogador</h2>
+          <p>
+            <label for="position">Posição do jogador:</label>
+            <input type="text" name="position" id="position" />
+            <br />
+            <br />
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" />
+            <br />
+            <br />
+            <label for="number">Número:</label>
+            <input type="text" name="number" id="number" />
+          </p>
+          <p id="newPlayer"></p>
+          <button onclick="addPlayer()">Escalar jogador</button>
+        </div>
+        <div id="removePlayer">
+          <h2>Remover jogador</h2>
+          <label for="numberToRemove">Número:</label>
+          <input type="text" name="numberToRemove" id="numberToRemove" />
+          <button onclick="removePlayer()">Remover jogador</button>
+        </div>
+        <div class="teamList">
+          <h2>Time</h2>
+          <ul id="teamList"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
